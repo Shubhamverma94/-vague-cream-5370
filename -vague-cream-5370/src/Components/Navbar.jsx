@@ -8,17 +8,21 @@ import {
   InputGroup,
   InputLeftElement,
   InputRightAddon,
+  Link,
   Spacer,
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 
 function Navbar() {
+
+
   return (
     <Container maxW="100%" bg="black" color="white" height="80px">
       <Flex py="1rem" my={0.5}>
         <Image
+          mt="-10px"
           ml="40px"
-          boxSize="60px"
+          boxSize="65px"
           objectFit="logo"
           src="https://tv.apple.com/assets/brands/Apple_TV_plus_logo_white-2721485772b7d06c4e33379ce990870e.svg"
           alt="appleTv+ logo"
@@ -43,7 +47,7 @@ function Navbar() {
             />
           </InputGroup>
 
-          <Button bg="#007aff" mx={2}>
+          <Button bg="#007aff" mx={2} >
             SIGNUP
           </Button>
         </Flex>
