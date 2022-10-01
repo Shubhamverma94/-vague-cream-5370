@@ -11,7 +11,7 @@ export const CardCarousel = ({ data, title, minititle }) => {
   const navigate = useNavigate()
 
   return (
-    <Box className="minicard" pt={5}>
+    <Box  className="minicard" pt={5}>
       <Heading
         size={{ base: "md", md: "md", lg: "md" }}
         align={"start"}
@@ -87,7 +87,7 @@ export const CardCarousel = ({ data, title, minititle }) => {
           </Box>
         ))}
       </Carousel>
-      <Divider borderWidth="2px" ml={5} mr={5} colorScheme="gray.100" />
+      <Divider borderWidth="4px" ml={5} mr={5} colorScheme="gray.100" />
     </Box>
   );
 };

@@ -8,8 +8,6 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <BackgroundVideo />
-      
       <AllRoutes />
     </div>
   );

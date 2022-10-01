@@ -12,14 +12,31 @@ import {
   Spacer,
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
+import { useNavigate } from "react-router-dom";
+// import Singup from "../Singup/Signup";
+
+// const Link
 
 function Navbar() {
+  const navigate = useNavigate();
 
+  const handleClick = () => {
+    navigate("/Signup")
+    alert("payment")
+  }
+   
+
+  const handleClick1 = () => {
+    navigate("/")
+    alert("Home")
+  }
+   
 
   return (
-    <Container maxW="100%" bg="black" color="white" height="80px">
+    <Container zIndex={2} pos="fixed" maxW="100%" bg="black" color="white" height="80px">
       <Flex py="1rem" my={0.5}>
         <Image
+          onClick={handleClick1}
           mt="-10px"
           ml="40px"
           boxSize="65px"
@@ -46,10 +63,14 @@ function Navbar() {
               fontWeight="bold"
             />
           </InputGroup>
-
-          <Button bg="#007aff" mx={2} >
-            SIGNUP
+          
+          <Button onClick={handleClick} bg="#007aff" mx={2} >
+          <Link to="/Singup">
+              SIGNUP
+              </Link>
           </Button>
+          
+         
         </Flex>
       </Flex>
     </Container>

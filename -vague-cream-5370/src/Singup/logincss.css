@@ -12,6 +12,8 @@
 }
 #applelogo > img{
     margin-top: 90px;
+    display: block;
+    margin: auto;
     font-size: 70px;
     width: 100px;
     height: 100px;

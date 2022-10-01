@@ -19,11 +19,20 @@ import { Box } from "@chakra-ui/react";
 // import { Footer } from "./Footer/Footer";
 // import MiniBanner from "./MiniBanner/MiniBanner";
 import { CardCarousel } from "../MiniCard/CardCarousel";
+import BackgroundVideo from "./BackgroundVideo";
 
 function Home() {
   return (
-    <Box top="30px" mt={70}>
+    
+    <Box>
       {/* <Banner /> */}
+      <BackgroundVideo />
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
       <CardCarousel
         data={comingSoon}
         title={"Trying: Watch Season 1 Free Through This Weekend"}

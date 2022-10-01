@@ -8,17 +8,20 @@ const BackgroundVideo = () => {
   return (
     <div className="bgVideo">
       <video style={videocss} src={videoplayback} autoPlay loop muted />
-      <Box style={videocss } className="content">
+      <Box style={videocss} className="content">
         <Text fontSize="6xl">BAD SISTERS</Text>
         <Text>
-          Drama <Button size='xs' variant="outline">TV-MA</Button>
+          Drama{" "}
+          <Button size="xs" variant="outline">
+            TV-MA
+          </Button>
         </Text>
         <Text fontSize="3xl">
-          FIve sisters are suspected <br /> of murdering one of their husbands.{" "}
+          FIve sisters are suspected <br /> of murdering one of their husbands.
           <br />
           Watch new episodes Fridays.
         </Text>
-        <Button colorScheme="gray" color='black' variant="solid">
+        <Button colorScheme="gray" color="black" variant="solid">
           Start Free Trial
         </Button>
         <Text>7 days free, then $4.99/month</Text>
