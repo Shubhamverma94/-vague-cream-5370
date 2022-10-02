@@ -1,10 +1,18 @@
 import React from "react";
 import { Box, Container, Image, Stack, Text } from "@chakra-ui/react";
 import logincss from "../Singup/logincss.css";
-
-
+import { Link, useNavigate } from "react-router-dom";
+import SignupPage from "./SignupPage";
 
 function Signup() {
+  const navigate = useNavigate();
+
+  const alertLogin = () => {
+    navigate("/")
+    alert("WELCOME SHUBHAM VERMA..")
+  }
+   
+
   return (
     <div>
       <div
@@ -26,8 +34,11 @@ function Signup() {
         </Box>
         <Box id="appleinput">
           <form id="loginform">
+            {/* <input type="email" placeholder="Apple ID"  /> */}
             <input type="email" placeholder="Apple ID" id="loginput" />
-            <button type="submit" id="loginsubmit">
+            <button type="submit" id="loginsubmit"
+            onClick={alertLogin}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -47,7 +58,9 @@ function Signup() {
       </div>
 
       <Box color="teal">
-        <Text>Create New Apple ID</Text>
+        <Text>
+          <Link to="/SignupPage">Create New Apple ID</Link>
+        </Text>
         <Text>Forget Apple ID or Password?</Text>
       </Box>
     </div>
