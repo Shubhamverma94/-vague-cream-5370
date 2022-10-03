@@ -1,0 +1,122 @@
+
+.contanierlogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    font-family:SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    width: 90%;
+    height: 600px;
+
+}
+#applelogo > img{
+    margin-top: 90px;
+    display: block;
+    margin: auto;
+    font-size: 70px;
+    width: 100px;
+    height: 100px;
+    color: #888;
+}
+#signtext >h1{
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: rgb(29, 29, 31);
+}
+#signtext >p{
+    font-size: 17px;
+    color: #1d1d1f;
+    margin-bottom: 25px;
+}
+#appleinput{
+    border: 2px solid grey;
+    border-radius: 10px;
+    height: 50px;
+    width: 300px;
+    padding: 0px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: end;
+}
+#loginput{
+    width: 235px;
+    border: 0px;
+    border-radius: 10px;
+    margin-top: 10px;
+    
+    height: 30px;
+    font-size: 17px;
+    
+}
+#loginsubmit {
+    padding: 0px;
+    border-radius: 10px;
+    width: 40px;
+    height: 95%;
+    border: 0;
+    margin: 0px;
+    background-color: white;
+    cursor: pointer;
+    
+}
+i{
+    font-size: 25px;
+    margin: 0px;
+    color: grey;
+}
+
+#login{
+    margin-bottom: 100px;
+    margin-top: 100px;
+    
+}
+#login > a{
+    color: teal;
+  text-decoration: none;
+    
+}
+#appleinput:hover{
+    border: 3px solid teal;
+}
+
+#loginform > input:focus{
+    outline: 0px;
+}
+
+@media screen and (min-width:0px) and (max-width:320px){
+    #appleinput{
+        width: 50%;
+        padding-bottom: 5px;
+    }
+    #loginput{
+        width: 70%;
+        height: 80%;
+        font-size: 13px;
+        padding: 0px;  
+    }
+
+    #loginsubmit {
+        width: 30px;
+    }
+    #signtext >p{
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    #signtext >h1{
+        font-size: 1.0rem;
+    }
+}
+@media screen and (min-width:320px) and (max-width:720px){
+    #appleinput{
+        width: 250px;
+        
+    }
+    #loginput{
+        width: 180px;
+        height: 75%;
+    
+        
+    }
+    
+}
